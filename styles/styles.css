@@ -47,9 +47,9 @@ aside {
 }
 
 aside h2 {
-    position: absolute;
     top: 1.5px;
     left: 120px;
+    position: absolute;
 }
 
 aside img {
@@ -65,7 +65,8 @@ footer {
     text-align: center;
 }
 
-/*Class Selectors*/
+
+/* Class Selectors */
 
 .box{
     margin: 1rem;
