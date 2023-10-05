@@ -40,19 +40,19 @@ main {
     max-width: 840px;
 }
 
-aside {
+.aside {
     width: 23.5rem;
     text-align: justify;
     position: relative;
 }
 
-aside h2 {
+.aside h2 {
     top: 1.5px;
     left: 120px;
     position: absolute;
 }
 
-aside img {
+.aside img {
     width: 340px;
     height: auto;
     margin-top: 1em;
