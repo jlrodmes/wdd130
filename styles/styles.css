@@ -17,42 +17,43 @@ nav a{
 
 h1 {
     color: steelblue;
+    padding-left: 1rem;
 }
 
-img {
-    width: 180px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-}
-
-main img {
-    float: right;
-}
-
-
-p {
-    padding: 0;
-}
 
 main {
     max-width: 840px;
 }
 
-.aside {
+main img {
+    width: 180px;
+    height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 1rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+aside {
     width: 23.5rem;
     text-align: justify;
     position: relative;
 }
 
-.aside h2 {
-    top: 1.5px;
-    left: 120px;
+aside h2 {
     position: absolute;
+    top:50px;
+    left: 150px;
+    color: aliceblue;
+
 }
 
-.aside img {
+aside img {
     width: 340px;
     height: auto;
     margin-top: 1em;
@@ -74,4 +75,8 @@ footer {
     padding: 1rem;
     background-color: whitesmoke;
     color: darkblue;
+}
+
+.indent {
+    padding-left: 2rem;
 }
