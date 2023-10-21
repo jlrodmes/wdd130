@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=ibm+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -135,28 +135,6 @@ nav a{
     padding-bottom: 1rem;
 }
 
-figure {
-    border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 1px;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-figure img {
-    max-width: 500px;
-    max-height: 175px;
-  }
-  
-figcaption {
-    background-color: #222;
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 5px;
-    text-align: center;
-}
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -182,4 +160,260 @@ footer {
 
 .socialmedia img {
     width: 50px;
+}
+
+
+/* Contact us page */
+
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 15px 20px;
+}
+
+.contactUs .title {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h1 {
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact {
+    padding: 30px;
+    background: #fff;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.box {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.info {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+.map {
+    width: 50%;
+    height: auto;
+    padding: 5px;
+}
+
+.info {
+    background: #0e3959;
+}
+
+.info h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    margin-right: 15px;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* images */
+ .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+ }
+
+.card {
+    width: 350px;
+    height: 250px;
+    display: grid;
+    grid-template-rows: minmax(100%,1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 15px;
+ }
+
+.card img, .card figcaption {
+    grid-area: stack;
+ }
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+ }
+
+.card figcaption {
+    background-color: #242424;
+    transform: translateY(calc(100% - 2rem));
+    transition: transform 0.6ms;
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+ }
+ 
+.contact legend {
+    color: #0e3959;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.box h2 {
+    display: inline;
+    text-align: justify;
+}
+
+form {
+    width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+label, input, button, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+input [type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column5 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+.column3 {
+    display: flex;
+    justify-content: space-around;   
+}
+
+.column4 {
+    display: grid;
+}
+
+.form {
+    background-color: #0e3959;
+}
+
+.contact .form, h3 {
+    color: #fff;
 }
