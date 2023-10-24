@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+:root {
+    background-color:rgb(76, 156, 187);
+}
+
+.bckd-image{
+    position: relative;
+}
+
+.bckd-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+h4 {
+    position: absolute;
+    padding-bottom: 150px;
+}

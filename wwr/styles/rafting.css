@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
 }
 
 :root {
@@ -36,7 +35,6 @@ h2 {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 35px;
-	font-family: cursive;
 	color: white;
     position: relative;
     text-shadow: 0 0 10px rgba(0,1,1, 1);
@@ -169,20 +167,23 @@ footer {
 .contactUs {
     position: relative;
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px 15px;
 }
 
 .contactUs .title {
+    padding: 45px;
     max-width: 100%;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     font-size: 2em;
 }
 
-.contactUs .title h1 {
+
+.contactUs .title h4 {
+    font-size: 3.5rem;
     color: #fff;
-    font-weight: 500;
+    font-weight:700;
 }
 
 .contact {
@@ -416,4 +417,169 @@ button {
 
 .contact .form, h3 {
     color: #fff;
+}
+
+.link-wf {
+    color: #242424
+}
+.link-wf a {
+    font-size: 1.3em;
+}
+
+
+/* trips page */
+
+.booking {
+    padding: 15px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.booking a{
+    color: #150b4eb2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.booking a:hover {
+    color: rgb(98, 30, 187);
+}
+
+
+.boxtrips {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 45px;
+}
+
+.card2 {
+    width: 320px;
+    height: 320px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stock";
+    overflow: hidden;
+    border: 3px solid #333;
+    border-radius: 20px;
+}
+
+.card2 img, .card2 figcaption {
+    grid-area: stock;
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card2 figcaption {
+    background-color: #242424e0;
+    transform: translateY(calc(100% - 3rem));
+    color: #fff;
+    text-align: center;
+}
+
+.card2 figcaption h5 {
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+
+.card2:hover figcaption {
+    transform: none;
+}
+
+ .hero-title h1{
+    padding-top: 50px
+}
+
+.hero .hero-title h2 {
+    padding-top: 250px;  
+    font-size: 4rem
+}
+
+.hero .hero-title h2 p {
+    display: flex;     
+}
+
+.hero-title h3 {
+    font-size: 4rem;
+    text-shadow: 0 0 10px rgba(0,1,1, 1);
+    text-align: center;
+}
+
+.signfom {
+    position: relative;
+    align-items: center;
+}
+
+.signfom form{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-bottom: 0;
+}
+
+.signfom span {
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.sign-item {
+    padding-left: 5px;
+}
+
+.sign-item col1 {
+    align-items: center;
+}
+
+.sign-item col2 {
+    align-items: center;
+}
+
+.sign-item button {
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: 1.2rem;
+    vertical-align: top;
+}
+
+.sign-item button:hover {
+    color: blueviolet;
+}
+
+.link-trip {
+    background: none;
+}
+
+.link-trip a {
+    color: rgba(233, 248, 20, 0.973);
+    text-shadow: 0 0 10px rgb(1, 1, 0);
+    font-size: 3.5rem;
+}
+
+.link-trip a:hover {
+    color: rgba(34, 252, 63, 0.973);
+}
+
+.wf {
+    padding: 30px;
+}
+
+.wf a {
+    color: #0e3959;
+    font-size: 1rem;
 }
